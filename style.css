@@ -1,0 +1,138 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+body {
+  padding: 200px;
+  font-size: 20px;
+}
+
+.container {
+  width: 500px;
+  box-shadow: 5px black;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 7px 2px rgb(90, 88, 88);
+  overflow: hidden;
+  position: absolute;
+}
+
+#haut {
+  height: 339px;
+  width: 509px;
+  transition: 1s;
+  background-position: center;
+  background-size: cover;
+  background-image: url("india.jpeg");
+  z-index: -2;
+  overflow: hidden;
+  position: relative;
+}
+
+.date {
+  background-color: rgb(224, 80, 8);
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  z-index: 20;
+  position: absolute;
+  left: 404px;
+  top: 15px;
+  padding: 10px;
+}
+
+#bas {
+  width: 500px;
+  padding-bottom: 30px;
+  transition: 0.7s;
+  background-color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+#photos {
+  background-color: rgb(224, 80, 8);
+  width: 120px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  bottom: 40px;
+  z-index: 2;
+}
+
+#title {
+  padding-left: 40px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 100px;
+}
+#title h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+}
+#title h3 {
+  color: rgb(224, 80, 8);
+  font-size: 26px;
+  font-weight: 300;
+}
+
+#text {
+  display: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.7s ease;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+footer {
+  padding-left: 40px;
+  width: 500px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+footer .icon {
+  width: 25px;
+}
+footer figure {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.container:hover {
+  height: 604px;
+}
+.container:hover #haut {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.container:hover #text {
+  transform: scaleY(1);
+  display: block;
+}
+.container:hover #bas {
+  top: -50px;
+}
+.container:hover #date {
+  transform: none;
+}
+
+/*# sourceMappingURL=style.css.map */
